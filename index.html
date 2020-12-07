@@ -19,6 +19,7 @@ function openFullscreen() {
   }
 }
 </script>
+<script> document.addEventListener('contextmenu', event => event.preventDefault()); </script>
 </head>
 <body onscroll="playSong()">
 	<div id="triangle-right"></div>
@@ -26,7 +27,9 @@ function openFullscreen() {
 	<p>this is it ladies, you need to do the click</p>
 </div>
 <div class="container">
-	<img src="https://media.githubusercontent.com/media/OwenDunnigan/photos-project/master/final_comp.gif" id="gif">
+	<video preload="auto" autoplay muted loop id="gif">
+		<source src="final.mp4" type="video/mp4">
+	</video>
 	<audio autoplay id="audio">
 		<source src="LTYT.mp3" type="audio/mpeg">
 	</audio>
