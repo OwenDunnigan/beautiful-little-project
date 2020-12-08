@@ -5,6 +5,11 @@
 	margin-top: 25%;
 }
 
+.front p {
+    color: blanchedalmond;
+    bottom: -10em;
+    position: relative;
+}
 #gif {
 	  height: 100vh;
     margin: 0px auto;
@@ -35,7 +40,7 @@ body {
     margin: 0% 50%;
 
     }
-    div #triangle-right:hover {
+    div#triangle-right:hover {
     	border-left-color: beige;
     }
    

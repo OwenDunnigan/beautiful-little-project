@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+/* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
+
+/* View in fullscreen */
+window.onclick = function () {openFullscreen() };
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+<script> document.addEventListener('contextmenu', event => event.preventDefault()); </script>
+</head>
+<body onscroll="playSong()">
+	<div id="triangle-right"></div>
+	<div class="front" onclick="openFullscreen" onscr>
+	<p>this is it ladies, you need to do the click</p>
+</div>
+<div class="container">
+	<video preload="auto" autoplay muted loop id="gif">
+		<source src="final.mp4" type="video/mp4">
+	</video>
+	<audio autoplay id="audio">
+		<source src="LTYT.mp3" type="audio/mpeg">
+	</audio>
+</div>
+</body>
+
+<script>
+	var audio = document.getElementById("audio");
+window.onscroll = function () {playSong() };
+	function playSong() {
+		audio.play();
+	}
+	</script>
+</html>
