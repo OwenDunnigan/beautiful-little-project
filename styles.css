@@ -38,9 +38,15 @@ body {
       border-bottom: 50px solid transparent;
           position: absolute;
     margin: 0% 50%;
-
+        top: 25%;
     }
     div#triangle-right:hover {
     	border-left-color: beige;
     }
    
+    .credits p {
+        color: whitesmoke;
+        margin: 0px auto;
+        width: 300px;
+        font-size: xx-small;
+    }
